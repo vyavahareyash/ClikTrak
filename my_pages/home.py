@@ -19,5 +19,15 @@ def main():
         else:
             st.info("No records found.")
     
+    st.header("Contracts")
+    
+    with st.spinner("Fetching records..."):
+        df = utils.get_contracts()
+    
+        if len(df) != 0:
+            st.dataframe(df)
+        else:
+            st.info("No records found.")
+
 if __name__=='__main__':
     main()
