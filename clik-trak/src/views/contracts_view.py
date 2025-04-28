@@ -48,7 +48,25 @@ def contracts_view():
                                 alignment=ft.alignment.center,
                                 padding=20
                             ),
-                            create_contracts_table(),
+                            ft.Container(
+                                content=ft.Column(
+                                    [create_contracts_table()],
+                                    expand=True,
+                                    spacing=0,scroll=ft.ScrollMode.ADAPTIVE
+                                ),
+                                expand=True,
+                                padding=20,
+                            ),
+                            ft.Container(
+                                content=ft.FloatingActionButton(
+                                    icon=ft.Icons.ADD,
+                                    on_click=add_contract,
+                                    bgcolor=ft.Colors.BLUE,
+                                    shape=ft.CircleBorder(),
+                                ),
+                                alignment=ft.alignment.bottom_right,
+                                padding=20,
+                            ),
                         ],
                         expand=True,
                         spacing=0,
@@ -56,16 +74,6 @@ def contracts_view():
                     alignment=ft.alignment.top_center,
                     expand=True
                 ),
-                ft.Container(
-                    content=ft.FloatingActionButton(
-                        icon=ft.Icons.ADD,
-                        on_click=add_contract,
-                        bgcolor=ft.Colors.BLUE,
-                        shape=ft.CircleBorder(),
-                    ),
-                    alignment=ft.alignment.bottom_right,
-                    padding=20,
-                )
             ],
             expand=True
         )
