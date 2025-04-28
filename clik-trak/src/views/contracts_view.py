@@ -3,6 +3,14 @@ import flet as ft
 def add_contract(e):
     print("Add contract")
 
+def add_contract_row(contract_name, amount):
+    return ft.DataRow(
+        cells=[
+            ft.DataCell(ft.Text("Contract Name")),
+            ft.DataCell(ft.Text("$5,000")),
+        ]
+    )   
+
 def create_contracts_table():
     return ft.Container(
         content=ft.DataTable(
@@ -11,30 +19,10 @@ def create_contracts_table():
                 ft.DataColumn(ft.Text("Amount"), numeric=True),
             ],
             rows=[
-                ft.DataRow(
-                    cells=[
-                        ft.DataCell(ft.Text("Website Development")),
-                        ft.DataCell(ft.Text("$5,000")),
-                    ]
-                ),
-                ft.DataRow(
-                    cells=[
-                        ft.DataCell(ft.Text("Mobile App Development")),
-                        ft.DataCell(ft.Text("$8,500")),
-                    ]
-                ),
-                ft.DataRow(
-                    cells=[
-                        ft.DataCell(ft.Text("UI/UX Design")),
-                        ft.DataCell(ft.Text("$3,200")),
-                    ]
-                ),
-                ft.DataRow(
-                    cells=[
-                        ft.DataCell(ft.Text("Content Management")),
-                        ft.DataCell(ft.Text("$2,800")),
-                    ]
-                ),
+                add_contract_row("Website Development", "$5,000"),
+                add_contract_row("Mobile App Development", "$8,500"),
+                add_contract_row("UI/UX Design", "$3,200"),
+                add_contract_row("Content Management", "$2,800"),
             ],
             border=ft.border.all(1, ft.Colors.GREY_300),
             border_radius=10,
