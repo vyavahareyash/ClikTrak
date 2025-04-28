@@ -1,4 +1,5 @@
 import flet as ft
+from db_utils import get_all_contracts
 
 def add_contract(e):
     print("Add contract")
@@ -6,12 +7,13 @@ def add_contract(e):
 def add_contract_row(contract_name, amount):
     return ft.DataRow(
         cells=[
-            ft.DataCell(ft.Text("Contract Name")),
-            ft.DataCell(ft.Text("$5,000")),
+            ft.DataCell(ft.Text(contract_name)),
+            ft.DataCell(ft.Text(amount)),
         ]
     )   
 
 def create_contracts_table():
+    contracts = get_all_contracts()
     return ft.Container(
         content=ft.DataTable(
             columns=[
@@ -19,10 +21,7 @@ def create_contracts_table():
                 ft.DataColumn(ft.Text("Amount"), numeric=True),
             ],
             rows=[
-                add_contract_row("Website Development", "$5,000"),
-                add_contract_row("Mobile App Development", "$8,500"),
-                add_contract_row("UI/UX Design", "$3,200"),
-                add_contract_row("Content Management", "$2,800"),
+                add_contract_row(contract["contract_name"], contract["total_amount"]) for contract in contracts
             ],
             border=ft.border.all(1, ft.Colors.GREY_300),
             border_radius=10,
