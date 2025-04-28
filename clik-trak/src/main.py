@@ -6,6 +6,47 @@ def add_contract(e):
 def add_equipment(e):
     print("Add equipment")
 
+def create_contracts_table():
+    return ft.Container(
+        content=ft.DataTable(
+            columns=[
+                ft.DataColumn(ft.Text("Contract Name")),
+                ft.DataColumn(ft.Text("Amount"), numeric=True),
+            ],
+            rows=[
+                ft.DataRow(
+                    cells=[
+                        ft.DataCell(ft.Text("Website Development")),
+                        ft.DataCell(ft.Text("$5,000")),
+                    ]
+                ),
+                ft.DataRow(
+                    cells=[
+                        ft.DataCell(ft.Text("Mobile App Development")),
+                        ft.DataCell(ft.Text("$8,500")),
+                    ]
+                ),
+                ft.DataRow(
+                    cells=[
+                        ft.DataCell(ft.Text("UI/UX Design")),
+                        ft.DataCell(ft.Text("$3,200")),
+                    ]
+                ),
+                ft.DataRow(
+                    cells=[
+                        ft.DataCell(ft.Text("Content Management")),
+                        ft.DataCell(ft.Text("$2,800")),
+                    ]
+                ),
+            ],
+            border=ft.border.all(1, ft.Colors.GREY_300),
+            border_radius=10,
+            vertical_lines=ft.border.BorderSide(1, ft.Colors.GREY_300),
+            horizontal_lines=ft.border.BorderSide(1, ft.Colors.GREY_300),
+        ),
+        padding=20,
+    )
+
 def contracts_view():
     return ft.SafeArea(
         ft.Stack(
@@ -18,45 +59,7 @@ def contracts_view():
                                 alignment=ft.alignment.center,
                                 padding=20
                             ),
-                            ft.Container(
-                                content=ft.DataTable(
-                                    columns=[
-                                        ft.DataColumn(ft.Text("Contract Name")),
-                                        ft.DataColumn(ft.Text("Amount"), numeric=True),
-                                    ],
-                                    rows=[
-                                        ft.DataRow(
-                                            cells=[
-                                                ft.DataCell(ft.Text("Website Development")),
-                                                ft.DataCell(ft.Text("$5,000")),
-                                            ]
-                                        ),
-                                        ft.DataRow(
-                                            cells=[
-                                                ft.DataCell(ft.Text("Mobile App Development")),
-                                                ft.DataCell(ft.Text("$8,500")),
-                                            ]
-                                        ),
-                                        ft.DataRow(
-                                            cells=[
-                                                ft.DataCell(ft.Text("UI/UX Design")),
-                                                ft.DataCell(ft.Text("$3,200")),
-                                            ]
-                                        ),
-                                        ft.DataRow(
-                                            cells=[
-                                                ft.DataCell(ft.Text("Content Management")),
-                                                ft.DataCell(ft.Text("$2,800")),
-                                            ]
-                                        ),
-                                    ],
-                                    border=ft.border.all(1, ft.Colors.GREY_300),
-                                    border_radius=10,
-                                    vertical_lines=ft.border.BorderSide(1, ft.Colors.GREY_300),
-                                    horizontal_lines=ft.border.BorderSide(1, ft.Colors.GREY_300),
-                                ),
-                                padding=20,
-                            ),
+                            create_contracts_table(),
                         ],
                         expand=True,
                         spacing=0,
