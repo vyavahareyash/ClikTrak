@@ -10,13 +10,17 @@ def contracts_view():
     return ft.SafeArea(
         ft.Stack(
             [
-                ft.Column(
-                    [
-                        ft.Text("Contracts View", size=20, weight=ft.FontWeight.BOLD),
-                        ft.Text("Your contracts will appear here"),
-                    ],
-                    horizontal_alignment=ft.CrossAxisAlignment.CENTER,
-                    spacing=20,
+                ft.Container(
+                    content=ft.Column(
+                        [
+                            ft.Text("Contracts", size=20, weight=ft.FontWeight.BOLD),
+                            ft.Text("Your contracts will appear here"),
+                        ],
+                        horizontal_alignment=ft.CrossAxisAlignment.CENTER,
+                        alignment=ft.MainAxisAlignment.CENTER,
+                        spacing=20,
+                    ),
+                    alignment=ft.alignment.center,
                     expand=True
                 ),
                 ft.Container(
@@ -38,13 +42,17 @@ def equipment_view():
     return ft.SafeArea(
         ft.Stack(
             [
-                ft.Column(
-                    [
-                        ft.Text("Equipment View", size=20, weight=ft.FontWeight.BOLD),
-                        ft.Text("Your equipment will appear here"),
-                    ],
-                    horizontal_alignment=ft.CrossAxisAlignment.CENTER,
-                    spacing=20,
+                ft.Container(
+                    content=ft.Column(
+                        [
+                            ft.Text("Equipment View", size=20, weight=ft.FontWeight.BOLD),
+                            ft.Text("Your equipment will appear here"),
+                        ],
+                        horizontal_alignment=ft.CrossAxisAlignment.CENTER,
+                        alignment=ft.MainAxisAlignment.CENTER,
+                        spacing=20,
+                    ),
+                    alignment=ft.alignment.center,
                     expand=True
                 ),
                 ft.Container(
