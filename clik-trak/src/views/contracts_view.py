@@ -8,7 +8,7 @@ def add_contract_row(contract_name, amount):
     return ft.DataRow(
         cells=[
             ft.DataCell(ft.Text(contract_name)),
-            ft.DataCell(ft.Text(amount)),
+            ft.DataCell(ft.Text(f"₹{amount}")),
         ]
     )   
 
@@ -17,8 +17,13 @@ def create_contracts_table():
     return ft.Container(
         content=ft.DataTable(
             columns=[
-                ft.DataColumn(ft.Text("Contract Name")),
-                ft.DataColumn(ft.Text("Amount"), numeric=True),
+                ft.DataColumn(
+                    ft.Text("Contract Name", color=ft.Colors.BLUE, weight=ft.FontWeight.BOLD),
+                ),
+                ft.DataColumn(
+                    ft.Text("Amount", color=ft.Colors.BLUE, weight=ft.FontWeight.BOLD),
+                    numeric=True
+                ),
             ],
             rows=[
                 add_contract_row(contract["contract_name"], contract["total_amount"]) for contract in contracts
