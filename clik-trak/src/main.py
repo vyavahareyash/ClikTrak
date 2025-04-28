@@ -8,33 +8,57 @@ def add_equipment(e):
 
 def contracts_view():
     return ft.SafeArea(
-        ft.Column(
+        ft.Stack(
             [
-                ft.Text("Contracts View", size=20, weight=ft.FontWeight.BOLD),
-                ft.Text("Your contracts will appear here"),
-                ft.FilledButton(
-                    content=ft.Text("Add New Contract"),
-                    on_click=add_contract
+                ft.Column(
+                    [
+                        ft.Text("Contracts View", size=20, weight=ft.FontWeight.BOLD),
+                        ft.Text("Your contracts will appear here"),
+                    ],
+                    horizontal_alignment=ft.CrossAxisAlignment.CENTER,
+                    spacing=20,
+                    expand=True
                 ),
+                ft.Container(
+                    content=ft.FloatingActionButton(
+                        icon=ft.Icons.ADD,
+                        on_click=add_contract,
+                        bgcolor=ft.Colors.BLUE,
+                        shape=ft.CircleBorder(),
+                    ),
+                    alignment=ft.alignment.bottom_right,
+                    padding=20,
+                )
             ],
-            horizontal_alignment=ft.CrossAxisAlignment.CENTER,
-            spacing=20
+            expand=True
         )
     )
 
 def equipment_view():
     return ft.SafeArea(
-        ft.Column(
+        ft.Stack(
             [
-                ft.Text("Equipment View", size=20, weight=ft.FontWeight.BOLD),
-                ft.Text("Your equipment will appear here"),
-                ft.FilledButton(
-                    content=ft.Text("Add New Equipment"),
-                    on_click=add_equipment
+                ft.Column(
+                    [
+                        ft.Text("Equipment View", size=20, weight=ft.FontWeight.BOLD),
+                        ft.Text("Your equipment will appear here"),
+                    ],
+                    horizontal_alignment=ft.CrossAxisAlignment.CENTER,
+                    spacing=20,
+                    expand=True
                 ),
+                ft.Container(
+                    content=ft.FloatingActionButton(
+                        icon=ft.Icons.ADD,
+                        on_click=add_equipment,
+                        bgcolor=ft.Colors.BLUE,
+                        shape=ft.CircleBorder(),
+                    ),
+                    alignment=ft.alignment.bottom_right,
+                    padding=20,
+                )
             ],
-            horizontal_alignment=ft.CrossAxisAlignment.CENTER,
-            spacing=20
+            expand=True
         )
     )
     
