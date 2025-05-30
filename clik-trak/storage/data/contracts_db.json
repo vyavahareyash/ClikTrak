@@ -1,0 +1,368 @@
+{
+    "tasks": {
+        "1": {
+            "type": "Photography"
+        },
+        "2": {
+            "type": "Videography"
+        },
+        "3": {
+            "type": "Drone shoot"
+        },
+        "4": {
+            "type": "Photo editing"
+        },
+        "5": {
+            "type": "Video editing"
+        }
+    },
+    "tags": {
+        "1": {
+            "name": "Wedding"
+        },
+        "2": {
+            "name": "Interview"
+        },
+        "3": {
+            "name": "Profile"
+        },
+        "4": {
+            "type": "Pre-wedding"
+        }
+    },
+    "contracts": {
+        "1": {
+            "id": "044fe27f-82d6-448c-8202-154693ebed4f",
+            "contract_name": "Pranil wedding",
+            "tasks": [{
+                    "type": "Photography",
+                    "amount": 4000
+                },
+                {
+                    "type": "Videography",
+                    "amount": 5000
+                }
+            ],
+            "tags": [
+                "Wedding",
+                "Pre-wedding"
+            ],
+            "total_amount": 8000
+        },
+        "2": {
+            "id": "044fe27f-82d6-448c-8202-154693ebed4f",
+            "contract_name": "Ganesh wedding",
+            "tasks": [{
+                    "type": "Photography",
+                    "amount": 4000
+                },
+                {
+                    "type": "Videography",
+                    "amount": 5000
+                }
+            ],
+            "tags": [
+                "Wedding",
+                "Pre-wedding"
+            ],
+            "total_amount": 9000
+        },
+        "3": {
+            "id": "044fe27f-82d6-448c-8202-154693ebed4f",
+            "contract_name": "Rajesh wedding",
+            "tasks": [{
+                "type": "Photography",
+                "amount": 4000
+            }],
+            "tags": [
+                "Wedding",
+                "Pre-wedding"
+            ],
+            "total_amount": 9000
+        },
+        "4": {
+            "id": "154fe27f-82d6-448c-8202-154693ebed4f",
+            "contract_name": "Sarah & John Wedding",
+            "tasks": [{
+                    "type": "Photography",
+                    "amount": 3500
+                },
+                {
+                    "type": "Videography",
+                    "amount": 4500
+                }
+            ],
+            "tags": ["Wedding", "Outdoor"],
+            "total_amount": 8000
+        },
+        "5": {
+            "id": "264fe27f-82d6-448c-8202-154693ebed4f",
+            "contract_name": "Corporate Event - Tech Summit",
+            "tasks": [{
+                    "type": "Photography",
+                    "amount": 2000
+                },
+                {
+                    "type": "Live Streaming",
+                    "amount": 3000
+                }
+            ],
+            "tags": ["Corporate", "Event"],
+            "total_amount": 5000
+        },
+        "6": {
+            "id": "374fe27f-82d6-448c-8202-154693ebed4f",
+            "contract_name": "Birthday Party - Emma",
+            "tasks": [{
+                "type": "Photography",
+                "amount": 1500
+            }],
+            "tags": ["Birthday", "Kids"],
+            "total_amount": 1500
+        },
+        "7": {
+            "id": "484fe27f-82d6-448c-8202-154693ebed4f",
+            "contract_name": "Product Shoot - Fashion Line",
+            "tasks": [{
+                    "type": "Photography",
+                    "amount": 2500
+                },
+                {
+                    "type": "Editing",
+                    "amount": 1000
+                }
+            ],
+            "tags": ["Commercial", "Product"],
+            "total_amount": 3500
+        },
+        "8": {
+            "id": "594fe27f-82d6-448c-8202-154693ebed4f",
+            "contract_name": "Maya & Raj Engagement",
+            "tasks": [{
+                    "type": "Photography",
+                    "amount": 2000
+                },
+                {
+                    "type": "Videography",
+                    "amount": 2500
+                }
+            ],
+            "tags": ["Engagement", "Pre-wedding"],
+            "total_amount": 4500
+        },
+        "9": {
+            "id": "604fe27f-82d6-448c-8202-154693ebed4f",
+            "contract_name": "School Graduation Ceremony",
+            "tasks": [{
+                    "type": "Photography",
+                    "amount": 1800
+                },
+                {
+                    "type": "Video Coverage",
+                    "amount": 2200
+                }
+            ],
+            "tags": ["Education", "Event"],
+            "total_amount": 4000
+        },
+        "10": {
+            "id": "714fe27f-82d6-448c-8202-154693ebed4f",
+            "contract_name": "Restaurant Menu Shoot",
+            "tasks": [{
+                "type": "Photography",
+                "amount": 1500
+            }],
+            "tags": ["Commercial", "Food"],
+            "total_amount": 1500
+        },
+        "11": {
+            "id": "824fe27f-82d6-448c-8202-154693ebed4f",
+            "contract_name": "David & Lisa Wedding",
+            "tasks": [{
+                    "type": "Photography",
+                    "amount": 4500
+                },
+                {
+                    "type": "Videography",
+                    "amount": 5500
+                },
+                {
+                    "type": "Drone Coverage",
+                    "amount": 1000
+                }
+            ],
+            "tags": ["Wedding", "Premium"],
+            "total_amount": 11000
+        },
+        "12": {
+            "id": "934fe27f-82d6-448c-8202-154693ebed4f",
+            "contract_name": "Real Estate Property Shoot",
+            "tasks": [{
+                    "type": "Photography",
+                    "amount": 2000
+                },
+                {
+                    "type": "Virtual Tour",
+                    "amount": 1500
+                }
+            ],
+            "tags": ["Real Estate", "Commercial"],
+            "total_amount": 3500
+        },
+        "13": {
+            "id": "044ge27f-82d6-448c-8202-154693ebed4f",
+            "contract_name": "Fashion Show Coverage",
+            "tasks": [{
+                    "type": "Photography",
+                    "amount": 3000
+                },
+                {
+                    "type": "Videography",
+                    "amount": 4000
+                }
+            ],
+            "tags": ["Fashion", "Event"],
+            "total_amount": 7000
+        },
+        "14": {
+            "id": "144fe27f-82d6-448c-8202-154693ebed4f",
+            "contract_name": "Corporate Headshots",
+            "tasks": [{
+                    "type": "Photography",
+                    "amount": 2500
+                },
+                {
+                    "type": "Retouching",
+                    "amount": 1000
+                }
+            ],
+            "tags": ["Corporate", "Portrait"],
+            "total_amount": 3500
+        },
+        "15": {
+            "id": "244fe27f-82d6-448c-8202-154693ebed4f",
+            "contract_name": "Baby Shower - Maria",
+            "tasks": [{
+                "type": "Photography",
+                "amount": 1200
+            }],
+            "tags": ["Baby Shower", "Event"],
+            "total_amount": 1200
+        },
+        "16": {
+            "id": "344fe27f-82d6-448c-8202-154693ebed4f",
+            "contract_name": "Concert Photography",
+            "tasks": [{
+                    "type": "Photography",
+                    "amount": 3500
+                },
+                {
+                    "type": "Video Coverage",
+                    "amount": 4500
+                }
+            ],
+            "tags": ["Music", "Event"],
+            "total_amount": 8000
+        },
+        "17": {
+            "id": "444fe27f-82d6-448c-8202-154693ebed4f",
+            "contract_name": "Family Portrait Session",
+            "tasks": [{
+                    "type": "Photography",
+                    "amount": 1800
+                },
+                {
+                    "type": "Prints Package",
+                    "amount": 700
+                }
+            ],
+            "tags": ["Family", "Portrait"],
+            "total_amount": 2500
+        },
+        "18": {
+            "id": "544fe27f-82d6-448c-8202-154693ebed4f",
+            "contract_name": "Sports Event Coverage",
+            "tasks": [{
+                    "type": "Photography",
+                    "amount": 2500
+                },
+                {
+                    "type": "Video Highlights",
+                    "amount": 3000
+                }
+            ],
+            "tags": ["Sports", "Event"],
+            "total_amount": 5500
+        },
+        "19": {
+            "id": "644fe27f-82d6-448c-8202-154693ebed4f",
+            "contract_name": "Pet Photography Session",
+            "tasks": [{
+                "type": "Photography",
+                "amount": 1000
+            }],
+            "tags": ["Pets", "Portrait"],
+            "total_amount": 1000
+        },
+        "20": {
+            "id": "744fe27f-82d6-448c-8202-154693ebed4f",
+            "contract_name": "Food Blog Shoot",
+            "tasks": [{
+                    "type": "Photography",
+                    "amount": 1500
+                },
+                {
+                    "type": "Styling",
+                    "amount": 500
+                }
+            ],
+            "tags": ["Food", "Commercial"],
+            "total_amount": 2000
+        },
+        "21": {
+            "id": "844fe27f-82d6-448c-8202-154693ebed4f",
+            "contract_name": "Charity Event Coverage",
+            "tasks": [{
+                    "type": "Photography",
+                    "amount": 1000
+                },
+                {
+                    "type": "Video Documentation",
+                    "amount": 1500
+                }
+            ],
+            "tags": ["Charity", "Event"],
+            "total_amount": 2500
+        },
+        "22": {
+            "id": "944fe27f-82d6-448c-8202-154693ebed4f",
+            "contract_name": "Architecture Photography",
+            "tasks": [{
+                    "type": "Photography",
+                    "amount": 3000
+                },
+                {
+                    "type": "Aerial Shots",
+                    "amount": 2000
+                }
+            ],
+            "tags": ["Architecture", "Commercial"],
+            "total_amount": 5000
+        },
+        "23": {
+            "id": "045fe27f-82d6-448c-8202-154693ebed4f",
+            "contract_name": "Sweet 16 Party",
+            "tasks": [{
+                    "type": "Photography",
+                    "amount": 1500
+                },
+                {
+                    "type": "Video Coverage",
+                    "amount": 2000
+                }
+            ],
+            "tags": ["Birthday", "Event"],
+            "total_amount": 3500
+        }
+    }
+}
