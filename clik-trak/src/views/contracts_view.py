@@ -1,5 +1,5 @@
 import flet as ft
-from db_utils import get_all_contracts
+from utils.db_utils import get_all_contracts
 
 def add_contract(e):
     print("Add contract")
